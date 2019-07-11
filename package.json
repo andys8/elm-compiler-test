@@ -1,0 +1,16 @@
+{
+  "name": "elm-compiler-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "24.8.0",
+    "tmp-promise": "2.0.2"
+  }
+}
