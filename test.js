@@ -4,6 +4,8 @@ const packages = require("./search.json");
 
 const packageNames = packages.map(({ name }) => name);
 
+tmp.setGracefulCleanup();
+
 describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
   test(
     "elm install",
@@ -11,7 +13,7 @@ describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
       console.debug(packageName);
 
       let err = "";
-      const dir = await tmp.dir();
+      const dir = await tmp.dir({ unsafeCleanup: true });
 
       const elmInit = spawn("elm", ["init"], { cwd: dir.path });
       elmInit.stderr.on("data", data => (err += data.toString()));
