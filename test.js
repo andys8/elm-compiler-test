@@ -1,11 +1,13 @@
 const tmp = require("tmp-promise");
 const { spawn } = require("child_process");
+const packages = require("./search.json");
 
-describe("Elm compiler test", () => {
+describe.each(packages.map(({ name }) => [name]))("Package %s", packageName => {
   test(
-    "directory",
+    "elm install",
     async done => {
-      const name = "bburdette/stl";
+
+      console.log(`Testing ${packageName}`);
 
       let err = "";
       const dir = await tmp.dir();
@@ -20,7 +22,9 @@ describe("Elm compiler test", () => {
         expect(err).toEqual("");
         expect(code).toEqual(0);
 
-        const elmInstall = spawn("elm", ["install", name], { cwd: dir.path });
+        const elmInstall = spawn("elm", ["install", packageName], {
+          cwd: dir.path
+        });
         elmInstall.stderr.on("data", data => (err += data.toString()));
         elmInstall.stdout.on("data", () => {
           elmInstall.stdin.write("y\n");
