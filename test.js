@@ -2,12 +2,13 @@ const tmp = require("tmp-promise");
 const { spawn } = require("child_process");
 const packages = require("./search.json");
 
-describe.each(packages.map(({ name }) => [name]))("Package %s", packageName => {
+const packageNames = packages.map(({ name }) => name);
+
+describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
   test(
     "elm install",
     async done => {
-
-      console.log(`Testing ${packageName}`);
+      console.debug(packageName);
 
       let err = "";
       const dir = await tmp.dir();
@@ -30,9 +31,10 @@ describe.each(packages.map(({ name }) => [name]))("Package %s", packageName => {
           elmInstall.stdin.write("y\n");
         });
 
-        elmInstall.on("exit", code => {
+        elmInstall.on("exit", async code => {
           expect(err).toEqual("");
           expect(code).toEqual(0);
+          await dir.cleanup();
           done();
         });
       });
