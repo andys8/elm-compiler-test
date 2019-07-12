@@ -6,6 +6,8 @@ const packageNames = packages.map(({ name }) => name);
 
 tmp.setGracefulCleanup();
 
+const elmBin = __dirname + "/bin/elm-0.19.1-alpha-1";
+
 describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
   test(
     "elm install",
@@ -15,7 +17,7 @@ describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
       let err = "";
       const dir = await tmp.dir({ unsafeCleanup: true });
 
-      const elmInit = spawn("elm", ["init"], { cwd: dir.path });
+      const elmInit = spawn(elmBin, ["init"], { cwd: dir.path });
       elmInit.stderr.on("data", data => (err += data.toString()));
       elmInit.stdout.on("data", () => {
         elmInit.stdin.write("y\n");
@@ -25,7 +27,7 @@ describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
         expect(err).toEqual("");
         expect(code).toEqual(0);
 
-        const elmInstall = spawn("elm", ["install", packageName], {
+        const elmInstall = spawn(elmBin, ["install", packageName], {
           cwd: dir.path
         });
         elmInstall.stderr.on("data", data => (err += data.toString()));
