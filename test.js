@@ -11,7 +11,6 @@ tmp.setGracefulCleanup();
 const elmBin = __dirname + "/bin/elm-0.19.1-alpha-1";
 
 describe("Elm compiler test", () => {
-
   test("Binary has expected version", async () => {
     const { stdout } = await exec(`${elmBin} --version`);
     console.debug(`Elm version ${stdout}`);
@@ -22,8 +21,6 @@ describe("Elm compiler test", () => {
     test(
       "elm install",
       async done => {
-        console.debug(packageName);
-
         let err = "";
         const dir = await tmp.dir({ unsafeCleanup: true });
 
