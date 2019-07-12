@@ -1,24 +1,25 @@
 const tmp = require("tmp-promise");
 const { spawn } = require("child_process");
-const packages = require("./search.json");
 const util = require("util");
-const exec = util.promisify(require("child_process").exec);
+const fs = require("fs");
 
+const packages = require("./search.json");
+const applicationNames = require("./applications.json");
+
+const exec = util.promisify(require("child_process").exec);
 const packageNames = packages.map(({ name }) => name);
+const elmBin = __dirname + "/bin/elm-0.19.1-alpha-2-linux";
 
 tmp.setGracefulCleanup();
 
-const elmBin = __dirname + "/bin/elm-0.19.1-alpha-2-linux";
-
 describe("Elm compiler test", () => {
-
   test("Binary has expected version", async () => {
     const { stdout } = await exec(`${elmBin} --version`);
     console.debug(`Elm version ${stdout}`);
     expect(stdout).toEqual("0.19.1-alpha-2\n");
   });
 
-  describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
+  describe.skip.each(packageNames.map(x => [x]))("Package %s", packageName => {
     test(
       "elm install",
       async done => {
@@ -56,4 +57,37 @@ describe("Elm compiler test", () => {
       60 * 1000
     );
   });
+
+  const setVersionInElmJson = path => {
+    const fileName = path + "/elm.json";
+    const file = require(fileName);
+    file["elm-version"] = "0.19.1";
+    fs.writeFileSync(fileName, JSON.stringify(file));
+  };
+
+  describe.each(applicationNames.map(x => [x]))(
+    "Application %s",
+    applicationName => {
+      test.each([[""], ["--optimize"], ["--debug"]])(
+        "elm make %s",
+        async flags => {
+          const dir = await tmp.dir({ unsafeCleanup: true });
+
+          await exec(`git clone https://github.com/${applicationName}.git .`, {
+            cwd: dir.path
+          });
+
+          setVersionInElmJson(dir.path);
+
+          const { stderr } = await exec(
+            `${elmBin} make ${flags} src/Main.elm`,
+            { cwd: dir.path }
+          );
+
+          expect(stderr).toEqual("");
+        },
+        60 * 1000
+      );
+    }
+  );
 });
