@@ -68,7 +68,7 @@ describe("Elm compiler test", () => {
   describe.each(applicationNames.map(x => [x]))(
     "Application %s",
     applicationName => {
-      test.each([[""], ["--optimize"], ["--debug"]])(
+      test.each([[""], ["--debug"]])(
         "elm make %s",
         async flags => {
           const dir = await tmp.dir({ unsafeCleanup: true });
