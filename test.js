@@ -8,14 +8,14 @@ const packageNames = packages.map(({ name }) => name);
 
 tmp.setGracefulCleanup();
 
-const elmBin = __dirname + "/bin/elm-0.19.1-alpha-1";
+const elmBin = __dirname + "/bin/elm-0.19.1-alpha-2-linux";
 
 describe("Elm compiler test", () => {
 
   test("Binary has expected version", async () => {
     const { stdout } = await exec(`${elmBin} --version`);
     console.debug(`Elm version ${stdout}`);
-    expect(stdout).toEqual("0.19.1\n");
+    expect(stdout).toEqual("0.19.1-alpha-2\n");
   });
 
   describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
