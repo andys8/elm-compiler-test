@@ -19,7 +19,7 @@ describe("Elm compiler test", () => {
     expect(stdout).toEqual("0.19.1-alpha-2\n");
   });
 
-  describe.skip.each(packageNames.map(x => [x]))("Package %s", packageName => {
+  describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
     test(
       "elm install",
       async done => {
