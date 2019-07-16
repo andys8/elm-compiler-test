@@ -2,13 +2,23 @@ const tmp = require("tmp-promise");
 const { spawn } = require("child_process");
 const util = require("util");
 const fs = require("fs");
+const os = require("os");
+const path = require("path");
 
 const packages = require("./search.json");
 const applicationNames = require("./applications.json");
 
 const exec = util.promisify(require("child_process").exec);
 const packageNames = packages.map(({ name }) => name);
-const elmBin = __dirname + "/bin/elm-0.19.1-alpha-2-linux";
+
+const elmVersion = "0.19.1";
+const buildUnderTest = elmVersion + "-alpha-3";
+const binaries = new Map([
+  ["linux", `elm-${buildUnderTest}-linux`],
+  ["darwin", `elm-${buildUnderTest}-mac`],
+  ["win32", `elm-${buildUnderTest}-windows.exe`],
+]);
+const elmBin = path.join(__dirname, 'bin', binaries.get(os.platform()));
 
 tmp.setGracefulCleanup();
 
@@ -16,7 +26,7 @@ describe("Elm compiler test", () => {
   test("Binary has expected version", async () => {
     const { stdout } = await exec(`${elmBin} --version`);
     console.debug(`Elm version ${stdout}`);
-    expect(stdout).toEqual("0.19.1-alpha-2\n");
+    expect(stdout.trim()).toEqual(buildUnderTest);
   });
 
   describe.each(packageNames.map(x => [x]))("Package %s", packageName => {
@@ -61,7 +71,7 @@ describe("Elm compiler test", () => {
   const setVersionInElmJson = path => {
     const fileName = path + "/elm.json";
     const file = require(fileName);
-    file["elm-version"] = "0.19.1";
+    file["elm-version"] = elmVersion;
     fs.writeFileSync(fileName, JSON.stringify(file));
   };
 
@@ -71,6 +81,8 @@ describe("Elm compiler test", () => {
       test.each([[""], ["--debug"]])(
         "elm make %s",
         async flags => {
+          console.debug(applicationName);
+
           const dir = await tmp.dir({ unsafeCleanup: true });
 
           await exec(`git clone https://github.com/${applicationName}.git .`, {
