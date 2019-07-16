@@ -1,0 +1,366 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Elm compiler test Package abradley2/form-controls elm install 1`] = `
+"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+
+I was trying to download the source code for abradley2/form-controls 2.0.2, so I
+tried to fetch:
+
+    https://github.com/abradley2/form-controls/zipball/2.0.2/
+
+But it came back as 404 Not Found
+
+This may mean some online endpoint changed in an unexpected way, so if does not
+seem like something on your side is causing this (e.g. firewall) please report
+this to https://github.com/elm/compiler/issues with your operating system, Elm
+version, the command you ran, the terminal output, and any additional
+information that can help others reproduce the error!
+
+"
+`;
+
+exports[`Elm compiler test Package abradley2/form-fields elm install 1`] = `
+"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+
+I was trying to download the source code for abradley2/form-fields 1.0.0, so I
+tried to fetch:
+
+    https://github.com/abradley2/form-fields/zipball/1.0.0/
+
+But it came back as 404 Not Found
+
+This may mean some online endpoint changed in an unexpected way, so if does not
+seem like something on your side is causing this (e.g. firewall) please report
+this to https://github.com/elm/compiler/issues with your operating system, Elm
+version, the command you ran, the terminal output, and any additional
+information that can help others reproduce the error!
+
+"
+`;
+
+exports[`Elm compiler test Package altjsus/elm-airtable elm install 1`] = `
+"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+
+I was trying to download the source code for altjsus/elm-airtable 1.0.0, so I
+tried to fetch:
+
+    https://github.com/altjsus/elm-airtable/zipball/1.0.0/
+
+But it came back as 404 Not Found
+
+This may mean some online endpoint changed in an unexpected way, so if does not
+seem like something on your side is causing this (e.g. firewall) please report
+this to https://github.com/elm/compiler/issues with your operating system, Elm
+version, the command you ran, the terminal output, and any additional
+information that can help others reproduce the error!
+
+"
+`;
+
+exports[`Elm compiler test Package arsduo/elm-ui-drag-drop elm install 1`] = `
+"-- CORRUPT PACKAGE DATA --------------------------------------------------------
+
+I downloaded the source code for arsduo/elm-ui-drag-drop 2.0.0 from:
+
+    https://github.com/arsduo/elm-ui-drag-drop/zipball/2.0.0/
+
+But it looks like the hash of the archive has changed since publication:
+
+  Expected: 294a9f79f0d04cf8d61b809b0246560999787f12
+    Actual: 932af8d46d99991bd8d9067ba70aa2b295f93471
+
+This usually means that the package author moved the version tag, so report it
+to them and see if that is the issue. Folks on Elm slack can probably help as
+well.
+
+"
+`;
+
+exports[`Elm compiler test Package bburdette/schelme elm install 1`] = `
+"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
+
+I cannot find a version of bburdette/schelme that is compatible with your
+existing dependencies.
+
+I checked all the published versions. When that failed, I tried to find any
+compatible combination of these packages, even if it meant changing all your
+existing dependencies! That did not work either!
+
+This is most likely to happen when a package is not upgraded yet. Maybe a new
+version of Elm came out recently? Maybe a common package was changed recently?
+Maybe a better package came along, so there was no need to upgrade this one? Try
+asking around https://elm-lang.org/community to learn what might be going on
+with this package.
+
+Note: Whatever the case, please be kind to the relevant package authors! Having
+friendly interactions with users is great motivation, and conversely, getting
+berated by strangers on the internet sucks your soul dry. Furthermore, package
+authors are humans with families, friends, jobs, vacations, responsibilities,
+goals, etc. They face obstacles outside of their technical work you will never
+know about, so please assume the best and try to be patient and supportive!
+
+"
+`;
+
+exports[`Elm compiler test Package bburdette/stl elm install 1`] = `
+"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
+
+I cannot find a version of bburdette/stl that is compatible with your existing
+dependencies.
+
+I checked all the published versions. When that failed, I tried to find any
+compatible combination of these packages, even if it meant changing all your
+existing dependencies! That did not work either!
+
+This is most likely to happen when a package is not upgraded yet. Maybe a new
+version of Elm came out recently? Maybe a common package was changed recently?
+Maybe a better package came along, so there was no need to upgrade this one? Try
+asking around https://elm-lang.org/community to learn what might be going on
+with this package.
+
+Note: Whatever the case, please be kind to the relevant package authors! Having
+friendly interactions with users is great motivation, and conversely, getting
+berated by strangers on the internet sucks your soul dry. Furthermore, package
+authors are humans with families, friends, jobs, vacations, responsibilities,
+goals, etc. They face obstacles outside of their technical work you will never
+know about, so please assume the best and try to be patient and supportive!
+
+"
+`;
+
+exports[`Elm compiler test Package bburdette/toop elm install 1`] = `
+"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
+
+I cannot find a version of bburdette/toop that is compatible with your existing
+dependencies.
+
+I checked all the published versions. When that failed, I tried to find any
+compatible combination of these packages, even if it meant changing all your
+existing dependencies! That did not work either!
+
+This is most likely to happen when a package is not upgraded yet. Maybe a new
+version of Elm came out recently? Maybe a common package was changed recently?
+Maybe a better package came along, so there was no need to upgrade this one? Try
+asking around https://elm-lang.org/community to learn what might be going on
+with this package.
+
+Note: Whatever the case, please be kind to the relevant package authors! Having
+friendly interactions with users is great motivation, and conversely, getting
+berated by strangers on the internet sucks your soul dry. Furthermore, package
+authors are humans with families, friends, jobs, vacations, responsibilities,
+goals, etc. They face obstacles outside of their technical work you will never
+know about, so please assume the best and try to be patient and supportive!
+
+"
+`;
+
+exports[`Elm compiler test Package bburdette/typed-collections elm install 1`] = `
+"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
+
+I cannot find a version of bburdette/typed-collections that is compatible with
+your existing dependencies.
+
+I checked all the published versions. When that failed, I tried to find any
+compatible combination of these packages, even if it meant changing all your
+existing dependencies! That did not work either!
+
+This is most likely to happen when a package is not upgraded yet. Maybe a new
+version of Elm came out recently? Maybe a common package was changed recently?
+Maybe a better package came along, so there was no need to upgrade this one? Try
+asking around https://elm-lang.org/community to learn what might be going on
+with this package.
+
+Note: Whatever the case, please be kind to the relevant package authors! Having
+friendly interactions with users is great motivation, and conversely, getting
+berated by strangers on the internet sucks your soul dry. Furthermore, package
+authors are humans with families, friends, jobs, vacations, responsibilities,
+goals, etc. They face obstacles outside of their technical work you will never
+know about, so please assume the best and try to be patient and supportive!
+
+"
+`;
+
+exports[`Elm compiler test Package flowlang-cc/elm-audio-graph elm install 1`] = `
+"-- CORRUPT PACKAGE DATA --------------------------------------------------------
+
+I downloaded the source code for flowlang-cc/elm-audio-graph 1.0.0 from:
+
+    https://github.com/flowlang-cc/elm-audio-graph/zipball/1.0.0/
+
+But it looks like the hash of the archive has changed since publication:
+
+  Expected: 91ad7d84d6b006463368396bfd6d62e1cfc0d914
+    Actual: e7720e6c1a59294a63f503031c41a5147a673022
+
+This usually means that the package author moved the version tag, so report it
+to them and see if that is the issue. Folks on Elm slack can probably help as
+well.
+
+"
+`;
+
+exports[`Elm compiler test Package getto-systems/getto-elm-command elm install 1`] = `
+"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+
+I was trying to download the source code for getto-systems/getto-elm-command
+1.0.2, so I tried to fetch:
+
+    https://github.com/getto-systems/getto-elm-command/zipball/1.0.2/
+
+But it came back as 404 Not Found
+
+This may mean some online endpoint changed in an unexpected way, so if does not
+seem like something on your side is causing this (e.g. firewall) please report
+this to https://github.com/elm/compiler/issues with your operating system, Elm
+version, the command you ran, the terminal output, and any additional
+information that can help others reproduce the error!
+
+"
+`;
+
+exports[`Elm compiler test Package jmg-duarte/group-list elm install 1`] = `
+"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
+
+I cannot find a version of jmg-duarte/group-list that is compatible with your
+existing dependencies.
+
+I checked all the published versions. When that failed, I tried to find any
+compatible combination of these packages, even if it meant changing all your
+existing dependencies! That did not work either!
+
+This is most likely to happen when a package is not upgraded yet. Maybe a new
+version of Elm came out recently? Maybe a common package was changed recently?
+Maybe a better package came along, so there was no need to upgrade this one? Try
+asking around https://elm-lang.org/community to learn what might be going on
+with this package.
+
+Note: Whatever the case, please be kind to the relevant package authors! Having
+friendly interactions with users is great motivation, and conversely, getting
+berated by strangers on the internet sucks your soul dry. Furthermore, package
+authors are humans with families, friends, jobs, vacations, responsibilities,
+goals, etc. They face obstacles outside of their technical work you will never
+know about, so please assume the best and try to be patient and supportive!
+
+"
+`;
+
+exports[`Elm compiler test Package maca/crdt-replicated-graph elm install 1`] = `
+"-- CORRUPT PACKAGE DATA --------------------------------------------------------
+
+I downloaded the source code for maca/crdt-replicated-graph 1.0.0 from:
+
+    https://github.com/maca/crdt-replicated-graph/zipball/1.0.0/
+
+But it looks like the hash of the archive has changed since publication:
+
+  Expected: 16b0e58ba155cef5f9323496009ff3083bfd4335
+    Actual: dadba9f3cd657f59d0743ef54c21ff0456a93079
+
+This usually means that the package author moved the version tag, so report it
+to them and see if that is the issue. Folks on Elm slack can probably help as
+well.
+
+"
+`;
+
+exports[`Elm compiler test Package not1602/elm-feather elm install 1`] = `
+"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+
+I was trying to download the source code for not1602/elm-feather 1.0.0, so I
+tried to fetch:
+
+    https://github.com/not1602/elm-feather/zipball/1.0.0/
+
+But it came back as 404 Not Found
+
+This may mean some online endpoint changed in an unexpected way, so if does not
+seem like something on your side is causing this (e.g. firewall) please report
+this to https://github.com/elm/compiler/issues with your operating system, Elm
+version, the command you ran, the terminal output, and any additional
+information that can help others reproduce the error!
+
+"
+`;
+
+exports[`Elm compiler test Package ozyinc/elm-sortable-table-with-row-id elm install 1`] = `
+"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+
+I was trying to download the source code for
+ozyinc/elm-sortable-table-with-row-id 1.0.0, so I tried to fetch:
+
+    https://github.com/ozyinc/elm-sortable-table-with-row-id/zipball/1.0.0/
+
+But it came back as 404 Not Found
+
+This may mean some online endpoint changed in an unexpected way, so if does not
+seem like something on your side is causing this (e.g. firewall) please report
+this to https://github.com/elm/compiler/issues with your operating system, Elm
+version, the command you ran, the terminal output, and any additional
+information that can help others reproduce the error!
+
+"
+`;
+
+exports[`Elm compiler test Package periodic/elm-csv elm install 1`] = `
+"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
+
+I cannot find a version of periodic/elm-csv that is compatible with your
+existing dependencies.
+
+I checked all the published versions. When that failed, I tried to find any
+compatible combination of these packages, even if it meant changing all your
+existing dependencies! That did not work either!
+
+This is most likely to happen when a package is not upgraded yet. Maybe a new
+version of Elm came out recently? Maybe a common package was changed recently?
+Maybe a better package came along, so there was no need to upgrade this one? Try
+asking around https://elm-lang.org/community to learn what might be going on
+with this package.
+
+Note: Whatever the case, please be kind to the relevant package authors! Having
+friendly interactions with users is great motivation, and conversely, getting
+berated by strangers on the internet sucks your soul dry. Furthermore, package
+authors are humans with families, friends, jobs, vacations, responsibilities,
+goals, etc. They face obstacles outside of their technical work you will never
+know about, so please assume the best and try to be patient and supportive!
+
+"
+`;
+
+exports[`Elm compiler test Package peterszerzo/elm-natural-ui elm install 1`] = `
+"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+
+I was trying to download the source code for peterszerzo/elm-natural-ui 16.0.0,
+so I tried to fetch:
+
+    https://github.com/peterszerzo/elm-natural-ui/zipball/16.0.0/
+
+But it came back as 404 Not Found
+
+This may mean some online endpoint changed in an unexpected way, so if does not
+seem like something on your side is causing this (e.g. firewall) please report
+this to https://github.com/elm/compiler/issues with your operating system, Elm
+version, the command you ran, the terminal output, and any additional
+information that can help others reproduce the error!
+
+"
+`;
+
+exports[`Elm compiler test Package reserve-protocol/elm-i3166-data elm install 1`] = `
+"-- CORRUPT PACKAGE DATA --------------------------------------------------------
+
+I downloaded the source code for reserve-protocol/elm-i3166-data 1.0.0 from:
+
+    https://github.com/reserve-protocol/elm-i3166-data/zipball/1.0.0/
+
+But it looks like the hash of the archive has changed since publication:
+
+  Expected: bc94d07075fb7604ed12d40277235bfb9c5962e4
+    Actual: 7d82aaaaea274ed169de7cd3402a9a0111945ba6
+
+This usually means that the package author moved the version tag, so report it
+to them and see if that is the issue. Folks on Elm slack can probably help as
+well.
+
+"
+`;

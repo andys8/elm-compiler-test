@@ -6,19 +6,21 @@ const os = require("os");
 const path = require("path");
 
 const packages = require("./search.json");
+const errorPackageNames = require("./error-packages.json");
 const applicationNames = require("./applications.json");
 
 const exec = util.promisify(require("child_process").exec);
 const packageNames = packages.map(({ name }) => name);
+const timeout = 60 * 1000;
 
 const elmVersion = "0.19.1";
 const buildUnderTest = elmVersion + "-alpha-3";
 const binaries = new Map([
   ["linux", `elm-${buildUnderTest}-linux`],
   ["darwin", `elm-${buildUnderTest}-mac`],
-  ["win32", `elm-${buildUnderTest}-windows.exe`],
+  ["win32", `elm-${buildUnderTest}-windows.exe`]
 ]);
-const elmBin = path.join(__dirname, 'bin', binaries.get(os.platform()));
+const elmBin = path.join(__dirname, "bin", binaries.get(os.platform()));
 
 tmp.setGracefulCleanup();
 
@@ -57,14 +59,20 @@ describe("Elm compiler test", () => {
           });
 
           elmInstall.on("exit", async code => {
-            expect(err).toEqual("");
-            expect(code).toEqual(0);
+            if (errorPackageNames.includes(packageName)) {
+              expect(err).toMatchSnapshot();
+              expect(code).toEqual(1);
+            } else {
+              expect(err).toEqual("");
+              expect(code).toEqual(0);
+            }
+
             await dir.cleanup();
             done();
           });
         });
       },
-      60 * 1000
+      timeout
     );
   });
 
@@ -81,7 +89,7 @@ describe("Elm compiler test", () => {
       test.each([[""], ["--debug"]])(
         "elm make %s",
         async flags => {
-          console.debug(applicationName);
+          console.debug(applicationName, flags);
 
           const dir = await tmp.dir({ unsafeCleanup: true });
 
@@ -98,7 +106,7 @@ describe("Elm compiler test", () => {
 
           expect(stderr).toEqual("");
         },
-        60 * 1000
+        timeout
       );
     }
   );
