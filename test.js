@@ -61,7 +61,6 @@ describe("Elm compiler test", () => {
           elmInstall.on("exit", async code => {
             if (errorPackageNames.includes(packageName)) {
               expect(err).toMatchSnapshot();
-              expect(code).toEqual(1);
             } else {
               expect(err).toEqual("");
               expect(code).toEqual(0);

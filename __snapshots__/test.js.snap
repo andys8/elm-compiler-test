@@ -76,31 +76,7 @@ well.
 "
 `;
 
-exports[`Elm compiler test Package bburdette/schelme elm install 1`] = `
-"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
-
-I cannot find a version of bburdette/schelme that is compatible with your
-existing dependencies.
-
-I checked all the published versions. When that failed, I tried to find any
-compatible combination of these packages, even if it meant changing all your
-existing dependencies! That did not work either!
-
-This is most likely to happen when a package is not upgraded yet. Maybe a new
-version of Elm came out recently? Maybe a common package was changed recently?
-Maybe a better package came along, so there was no need to upgrade this one? Try
-asking around https://elm-lang.org/community to learn what might be going on
-with this package.
-
-Note: Whatever the case, please be kind to the relevant package authors! Having
-friendly interactions with users is great motivation, and conversely, getting
-berated by strangers on the internet sucks your soul dry. Furthermore, package
-authors are humans with families, friends, jobs, vacations, responsibilities,
-goals, etc. They face obstacles outside of their technical work you will never
-know about, so please assume the best and try to be patient and supportive!
-
-"
-`;
+exports[`Elm compiler test Package bburdette/schelme elm install 1`] = `""`;
 
 exports[`Elm compiler test Package bburdette/stl elm install 1`] = `
 "-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
@@ -128,57 +104,9 @@ know about, so please assume the best and try to be patient and supportive!
 "
 `;
 
-exports[`Elm compiler test Package bburdette/toop elm install 1`] = `
-"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
+exports[`Elm compiler test Package bburdette/toop elm install 1`] = `""`;
 
-I cannot find a version of bburdette/toop that is compatible with your existing
-dependencies.
-
-I checked all the published versions. When that failed, I tried to find any
-compatible combination of these packages, even if it meant changing all your
-existing dependencies! That did not work either!
-
-This is most likely to happen when a package is not upgraded yet. Maybe a new
-version of Elm came out recently? Maybe a common package was changed recently?
-Maybe a better package came along, so there was no need to upgrade this one? Try
-asking around https://elm-lang.org/community to learn what might be going on
-with this package.
-
-Note: Whatever the case, please be kind to the relevant package authors! Having
-friendly interactions with users is great motivation, and conversely, getting
-berated by strangers on the internet sucks your soul dry. Furthermore, package
-authors are humans with families, friends, jobs, vacations, responsibilities,
-goals, etc. They face obstacles outside of their technical work you will never
-know about, so please assume the best and try to be patient and supportive!
-
-"
-`;
-
-exports[`Elm compiler test Package bburdette/typed-collections elm install 1`] = `
-"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
-
-I cannot find a version of bburdette/typed-collections that is compatible with
-your existing dependencies.
-
-I checked all the published versions. When that failed, I tried to find any
-compatible combination of these packages, even if it meant changing all your
-existing dependencies! That did not work either!
-
-This is most likely to happen when a package is not upgraded yet. Maybe a new
-version of Elm came out recently? Maybe a common package was changed recently?
-Maybe a better package came along, so there was no need to upgrade this one? Try
-asking around https://elm-lang.org/community to learn what might be going on
-with this package.
-
-Note: Whatever the case, please be kind to the relevant package authors! Having
-friendly interactions with users is great motivation, and conversely, getting
-berated by strangers on the internet sucks your soul dry. Furthermore, package
-authors are humans with families, friends, jobs, vacations, responsibilities,
-goals, etc. They face obstacles outside of their technical work you will never
-know about, so please assume the best and try to be patient and supportive!
-
-"
-`;
+exports[`Elm compiler test Package bburdette/typed-collections elm install 1`] = `""`;
 
 exports[`Elm compiler test Package flowlang-cc/elm-audio-graph elm install 1`] = `
 "-- CORRUPT PACKAGE DATA --------------------------------------------------------
@@ -301,31 +229,7 @@ information that can help others reproduce the error!
 "
 `;
 
-exports[`Elm compiler test Package periodic/elm-csv elm install 1`] = `
-"-- CANNOT FIND COMPATIBLE VERSION ------------------------------------- elm.json
-
-I cannot find a version of periodic/elm-csv that is compatible with your
-existing dependencies.
-
-I checked all the published versions. When that failed, I tried to find any
-compatible combination of these packages, even if it meant changing all your
-existing dependencies! That did not work either!
-
-This is most likely to happen when a package is not upgraded yet. Maybe a new
-version of Elm came out recently? Maybe a common package was changed recently?
-Maybe a better package came along, so there was no need to upgrade this one? Try
-asking around https://elm-lang.org/community to learn what might be going on
-with this package.
-
-Note: Whatever the case, please be kind to the relevant package authors! Having
-friendly interactions with users is great motivation, and conversely, getting
-berated by strangers on the internet sucks your soul dry. Furthermore, package
-authors are humans with families, friends, jobs, vacations, responsibilities,
-goals, etc. They face obstacles outside of their technical work you will never
-know about, so please assume the best and try to be patient and supportive!
-
-"
-`;
+exports[`Elm compiler test Package periodic/elm-csv elm install 1`] = `""`;
 
 exports[`Elm compiler test Package peterszerzo/elm-natural-ui elm install 1`] = `
 "-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
