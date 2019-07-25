@@ -14,7 +14,7 @@ const packageNames = packages.map(({ name }) => name);
 const timeout = 60 * 1000;
 
 const elmVersion = "0.19.1";
-const buildUnderTest = elmVersion + "-alpha-3";
+const buildUnderTest = elmVersion + "-alpha-4";
 const binaries = new Map([
   ["linux", `elm-${buildUnderTest}-linux`],
   ["darwin", `elm-${buildUnderTest}-mac`],
