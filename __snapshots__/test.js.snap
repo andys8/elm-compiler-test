@@ -108,24 +108,7 @@ exports[`Elm compiler test Package bburdette/toop elm install 1`] = `""`;
 
 exports[`Elm compiler test Package bburdette/typed-collections elm install 1`] = `""`;
 
-exports[`Elm compiler test Package flowlang-cc/elm-audio-graph elm install 1`] = `
-"-- CORRUPT PACKAGE DATA --------------------------------------------------------
-
-I downloaded the source code for flowlang-cc/elm-audio-graph 1.0.0 from:
-
-    https://github.com/flowlang-cc/elm-audio-graph/zipball/1.0.0/
-
-But it looks like the hash of the archive has changed since publication:
-
-  Expected: 91ad7d84d6b006463368396bfd6d62e1cfc0d914
-    Actual: e7720e6c1a59294a63f503031c41a5147a673022
-
-This usually means that the package author moved the version tag, so report it
-to them and see if that is the issue. Folks on Elm slack can probably help as
-well.
-
-"
-`;
+exports[`Elm compiler test Package flowlang-cc/elm-audio-graph elm install 1`] = `""`;
 
 exports[`Elm compiler test Package getto-systems/getto-elm-command elm install 1`] = `
 "-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
