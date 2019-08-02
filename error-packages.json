@@ -11,11 +11,12 @@
   "getto-systems/getto-elm-command",
   "jmg-duarte/group-list",
   "maca/crdt-replicated-graph",
+  "nikita-volkov/hashing-containers",
+  "nikita-volkov/typeclasses",
   "not1602/elm-feather",
   "ozyinc/elm-sortable-table-with-row-id",
   "periodic/elm-csv",
   "peterszerzo/elm-natural-ui",
   "reserve-protocol/elm-i3166-data",
-  "tricycle/elm-infnite-gallery",
-  "nikita-volkov/typeclasses"
+  "tricycle/elm-infnite-gallery"
 ]
