@@ -15,5 +15,7 @@
   "ozyinc/elm-sortable-table-with-row-id",
   "periodic/elm-csv",
   "peterszerzo/elm-natural-ui",
-  "reserve-protocol/elm-i3166-data"
+  "reserve-protocol/elm-i3166-data",
+  "tricycle/elm-infnite-gallery",
+  "nikita-volkov/typeclasses"
 ]
