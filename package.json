@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --ci",
-    "test:watch": "jest --watchAll",
+    "test:update-snapshot": "jest --updateSnapshot",
     "update-elm-packages": "node update-elm-packages.js"
   },
   "author": "andys8",

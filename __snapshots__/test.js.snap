@@ -104,12 +104,6 @@ know about, so please assume the best and try to be patient and supportive!
 "
 `;
 
-exports[`Elm compiler test Package bburdette/toop elm install 1`] = `""`;
-
-exports[`Elm compiler test Package bburdette/typed-collections elm install 1`] = `""`;
-
-exports[`Elm compiler test Package flowlang-cc/elm-audio-graph elm install 1`] = `""`;
-
 exports[`Elm compiler test Package getto-systems/getto-elm-command elm install 1`] = `
 "-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
 
@@ -174,43 +168,9 @@ well.
 "
 `;
 
-exports[`Elm compiler test Package nikita-volkov/hashing-containers elm install 1`] = `
-"-- CORRUPT PACKAGE DATA --------------------------------------------------------
+exports[`Elm compiler test Package nikita-volkov/hashing-containers elm install 1`] = `""`;
 
-I downloaded the source code for nikita-volkov/typeclasses 1.6.0 from:
-
-    https://github.com/nikita-volkov/typeclasses/zipball/1.6.0/
-
-But it looks like the hash of the archive has changed since publication:
-
-  Expected: 2e12e7e369e860fbd8ebca680b1a84817097f4bd
-    Actual: 86587a0288d499c71e8b62f975e75b879b16258d
-
-This usually means that the package author moved the version tag, so report it
-to them and see if that is the issue. Folks on Elm slack can probably help as
-well.
-
-"
-`;
-
-exports[`Elm compiler test Package nikita-volkov/typeclasses elm install 1`] = `
-"-- CORRUPT PACKAGE DATA --------------------------------------------------------
-
-I downloaded the source code for nikita-volkov/typeclasses 1.6.0 from:
-
-    https://github.com/nikita-volkov/typeclasses/zipball/1.6.0/
-
-But it looks like the hash of the archive has changed since publication:
-
-  Expected: 2e12e7e369e860fbd8ebca680b1a84817097f4bd
-    Actual: 86587a0288d499c71e8b62f975e75b879b16258d
-
-This usually means that the package author moved the version tag, so report it
-to them and see if that is the issue. Folks on Elm slack can probably help as
-well.
-
-"
-`;
+exports[`Elm compiler test Package nikita-volkov/typeclasses elm install 1`] = `""`;
 
 exports[`Elm compiler test Package not1602/elm-feather elm install 1`] = `
 "-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
@@ -291,20 +251,20 @@ well.
 `;
 
 exports[`Elm compiler test Package tricycle/elm-infnite-gallery elm install 1`] = `
-"-- PROBLEM DOWNLOADING PACKAGE -------------------------------------------------
+"-- CORRUPT PACKAGE DATA --------------------------------------------------------
 
-I was trying to download the source code for tricycle/elm-infnite-gallery 2.0.1,
-so I tried to fetch:
+I downloaded the source code for tricycle/elm-infnite-gallery 2.0.1 from:
 
     https://github.com/tricycle/elm-infnite-gallery/zipball/2.0.1/
 
-But it came back as 404 Not Found
+But it looks like the hash of the archive has changed since publication:
 
-This may mean some online endpoint changed in an unexpected way, so if does not
-seem like something on your side is causing this (e.g. firewall) please report
-this to https://github.com/elm/compiler/issues with your operating system, Elm
-version, the command you ran, the terminal output, and any additional
-information that can help others reproduce the error!
+  Expected: e40fa789c001a2e7aad1b391eb26ef0f562e032b
+    Actual: de8ef47e8b46bc5f5df15681b3e033b79a6cab8f
+
+This usually means that the package author moved the version tag, so report it
+to them and see if that is the issue. Folks on Elm slack can probably help as
+well.
 
 "
 `;
